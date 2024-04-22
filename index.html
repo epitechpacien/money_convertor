@@ -17,9 +17,16 @@
         <input type="number" id="input-eurgbp" step="0.00001" value="1">
         <span>EUR</span>
         <span>-</span>
-        <input type="number" id="input-gbpeur" step="0.00001" value="0.85753" data-taux ="0.85753">
-        <span>GBP</span>
+        <input type="number" id="input-gbpeur" step="0.00001">
+        <div class="select">
+            <select name="currency" class="filter_currency">
+            <option value="GBP">GBP</option>
+            <option value="USD">USD</option>
+            <option value="JPY">JPY</option>
+            </select>
+        </div>
     </div>
+    <div id="time" class="time"></div>
     <script src="./script.js"></script>
  </body>
 </html>

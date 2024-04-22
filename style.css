@@ -12,13 +12,13 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: "Poppins", sans-serif;
     margin: 20px 0;
 }
 
 header {
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 
 div {
@@ -30,9 +30,9 @@ input {
     font-size: 20px;
     -moz-appearance: textfield;
     text-align: center;
-    border: 1px solide white;
+    border: 1px solide rgb(255, 255, 255);
     border-radius: 5px;
-    width: 200px;
+    width: 300px;
     margin-right: 10px;
     padding: .1rem 10px;
 }
@@ -44,5 +44,48 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(47, 163, 89);
+    color: rgb(65, 98, 196);
+}
+
+.time {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appeareance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: rgb(0, 0, 0);
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: rgb(74, 60, 60);
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background: white;
+    color: rgb(59, 136, 236);
 }
